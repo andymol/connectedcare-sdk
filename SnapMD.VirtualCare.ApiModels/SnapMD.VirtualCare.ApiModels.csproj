@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\..\src\packages\Microsoft.Net.Compilers.1.3.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\..\..\src\packages\Microsoft.Net.Compilers.1.3.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{26B4F2AD-87AE-491B-801A-5D70FB0D2D74}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SnapMD.VirtualCare.ApiModels</RootNamespace>
+    <AssemblyName>SnapMD.VirtualCare.ApiModels</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\..\src\</SolutionDir>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>App_Data\SnapMD.VirtualCare.ApiModels.xml</DocumentationFile>
+    <CodeAnalysisRuleSet>SnapMD.VirtualCare.ApiModels.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>SnapMD.VirtualCare.ApiModels.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>SnapMD.VirtualCare.ApiModels.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <DocumentationFile>App_Data\SnapMD.VirtualCare.ApiModels.xml</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>SnapMD.VirtualCare.ApiModels.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>App_Data\SnapMD.VirtualCare.ApiModels.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DotNetCore|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\DotNetCore\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>App_Data\SnapMD.VirtualCare.ApiModels.xml</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>SnapMD.VirtualCare.ApiModels.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DotNetCore|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\DotNetCore\</OutputPath>
+    <DefineConstants>CODE_ANALYSIS;DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>App_Data\SnapMD.VirtualCare.ApiModels.xml</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>SnapMD.VirtualCare.ApiModels.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Hl7.Fhir.DSTU2.Core, Version=0.90.4.31118, Culture=neutral, PublicKeyToken=d706911480550fc3, processorArchitecture=MSIL">
+      <HintPath>..\..\..\src\packages\Hl7.Fhir.DSTU2.0.90.4-alpha1\lib\net45\Hl7.Fhir.DSTU2.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\src\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddressObject.cs" />
+    <Compile Include="AddressObjectExtensions.cs" />
+    <Compile Include="ProfilesLocationRequest.cs" />
+    <Compile Include="AddPatientProfileRequest.cs" />
+    <Compile Include="ApiResponse.cs" />
+    <Compile Include="Attributes\ModelNameAttribute.cs" />
+    <Compile Include="PatientProfilesResult.cs" />
+    <Compile Include="PatientsGroupResponse.cs" />
+    <Compile Include="PatientsGroupRequest.cs" />
+    <Compile Include="ClinicianSpecialty.cs" />
+    <Compile Include="ContactTypeCode.cs" />
+    <Compile Include="CreateStaffProfileResponse.cs" />
+    <Compile Include="Enums\AllergyCategoryCode.cs" />
+    <Compile Include="Enums\AllergyCriticalityCode.cs" />
+    <Compile Include="Enums\AllergyTypeCode.cs" />
+    <Compile Include="PatientAllergyItem.cs" />
+    <Compile Include="DependentRelationship.cs" />
+    <Compile Include="DocumentEncounterRequest.cs" />
+    <Compile Include="DocumentEncounterResponse.cs" />
+    <Compile Include="EmailUserRequest.cs" />
+    <Compile Include="Enums\IdentifierTypeCode.cs" />
+    <Compile Include="Enums\IdentifierUsageCode.cs" />
+    <Compile Include="IdentifierValue.cs" />
+    <Compile Include="IHospitalResponse.cs" />
+    <Compile Include="ImageUploadResponse.cs" />
+    <Compile Include="LegacyMedicalHistoryForm.cs" />
+    <Compile Include="NewCoUserRequest.cs" />
+    <Compile Include="ClinicianPersonResponse.cs" />
+    <Compile Include="PatientAdminResponseShort.cs" />
+    <Compile Include="PatientPersonResponse.cs" />
+    <Compile Include="PatientProfileFieldChangesTrackingRequest.cs" />
+    <Compile Include="PatientUpdateRequest.cs" />
+    <Compile Include="Payments\PatientPaymentRequest.cs" />
+    <Compile Include="Payments\PatientPaymentResponse.cs" />
+    <Compile Include="PersonName.cs" />
+    <Compile Include="Rules\CompoundVisibilityResponse.cs" />
+    <Compile Include="Rules\CompoundVisibilityRuleResponse.cs" />
+    <Compile Include="Rules\GeoCoordinate.cs" />
+    <Compile Include="Rules\IRuleExecutionRequest.cs" />
+    <Compile Include="Rules\PatientOrganizationRuleRequest.cs" />
+    <Compile Include="Rules\PatientOrganizationRuleResponse.cs" />
+    <Compile Include="Rules\PatientProviderLicenseRuleResponse.cs" />
+    <Compile Include="Rules\PatientProviderLicenseRuleRequest.cs" />
+    <Compile Include="Rules\PostalCodeRequest.cs" />
+    <Compile Include="Rules\PostalCodeResponse.cs" />
+    <Compile Include="Rules\PatientResponseRuleRequest.cs" />
+    <Compile Include="Rules\CompoundVisibilityRequest.cs" />
+    <Compile Include="Rules\ProviderLicenseRuleRequest.cs" />
+    <Compile Include="Rules\PatientResponseRuleResponse .cs" />
+    <Compile Include="Rules\ProviderLicenseRuleResponse.cs" />
+    <Compile Include="Rules\PatientVisibilityRequest.cs" />
+    <Compile Include="Rules\ProviderVisibilityRequest.cs" />
+    <Compile Include="Rules\RegistrationAvailabilityRequest.cs" />
+    <Compile Include="Rules\RegistrationAvailabilityResponse.cs" />
+    <Compile Include="Rules\RuleDetailsRequest.cs" />
+    <Compile Include="Rules\RuleEnums.cs" />
+    <Compile Include="Rules\RuleRequest.cs" />
+    <Compile Include="Rules\RuleResponse.cs" />
+    <Compile Include="Rules\RuleSetRequest.cs" />
+    <Compile Include="Rules\RuleSetResponse.cs" />
+    <Compile Include="Rules\RuleTemplateRequest.cs" />
+    <Compile Include="Rules\RuleTemplateResponse.cs" />
+    <Compile Include="Rules\SubjectAddressRuleRequest.cs" />
+    <Compile Include="Rules\SubjectAddressRuleResponse.cs" />
+    <Compile Include="Rules\SubjectDistanceRuleRequest.cs" />
+    <Compile Include="Rules\SubjectDistanceRuleResponse.cs" />
+    <Compile Include="ProfileImageResponse.cs" />
+    <Compile Include="Rules\CompoundVisibilityRuleRequest.cs" />
+    <Compile Include="Scheduling\AppointmentSearch.cs" />
+    <Compile Include="Scheduling\Coverage\CoverageFrame.cs" />
+    <Compile Include="Scheduling\Coverage\CoverageType.cs" />
+    <Compile Include="Scheduling\EncounterTypeCode.cs" />
+    <Compile Include="Scheduling\IntakeConcern.cs" />
+    <Compile Include="Scheduling\OnDemandAvailabilityRequest.cs" />
+    <Compile Include="Scheduling\OnDemandAvailabilityResponse.cs" />
+    <Compile Include="OnDemandIntakeRequest.cs" />
+    <Compile Include="Scheduling\OnDemandResponse.cs" />
+    <Compile Include="Scheduling\PatientSelfScheduling\AppointmentSlot.cs" />
+    <Compile Include="Scheduling\PatientSelfScheduling\SelfSchedulingClinician.cs" />
+    <Compile Include="Scheduling\PatientSelfScheduling\SelfSchedulingClinicianSearchRequest.cs" />
+    <Compile Include="Scheduling\PatientSelfScheduling\SelfSchedulingClinicianSearchResult.cs" />
+    <Compile Include="Scheduling\ZonedTime.cs" />
+    <Compile Include="SiteNotifications\SiteNotificationRequest.cs" />
+    <Compile Include="SiteNotifications\UserSiteNotificationRequest.cs" />
+    <Compile Include="SmallTelecom.cs" />
+    <Compile Include="SsoSerializableToken.cs" />
+    <Compile Include="UserActivationRequest.cs" />
+    <Compile Include="ParticipantEmailInvitationRequest.cs" />
+    <Compile Include="CoUserEmailInvitationRequest.cs" />
+    <Compile Include="ConsultationParticipantRequest.cs" />
+    <Compile Include="ConsultationParticipantResponse.cs" />
+    <Compile Include="ProviderBase.cs" />
+    <Compile Include="ProviderRequest.cs" />
+    <Compile Include="ProviderResponse.cs" />
+    <Compile Include="Scheduling\AppointmentIntakeMetadata.cs" />
+    <Compile Include="Scheduling\AppointmentOptimizationCode.cs" />
+    <Compile Include="Scheduling\AppointmentParticipantResponse.cs" />
+    <Compile Include="Scheduling\AppointmentParticipantRequest.cs" />
+    <Compile Include="Scheduling\AppointmentResponse.cs" />
+    <Compile Include="Scheduling\AppointmentStatusCode.cs" />
+    <Compile Include="BaseProfile.cs" />
+    <Compile Include="ClinicianGroupRequest.cs" />
+    <Compile Include="ClinicianGroupResponse.cs" />
+    <Compile Include="ClinicianProfilesResult.cs" />
+    <Compile Include="CodeSetResponse.cs" />
+    <Compile Include="ConsultationEvents.cs" />
+    <Compile Include="CustomerSsoType.cs" />
+    <Compile Include="DoctorRecord.cs" />
+    <Compile Include="Enums\UserType.cs" />
+    <Compile Include="Function.cs" />
+    <Compile Include="GlobalStatusCode.cs" />
+    <Compile Include="HospitalRecord.cs" />
+    <Compile Include="GuardianRecord.cs" />
+    <Compile Include="NewPatientResponse.cs" />
+    <Compile Include="FIrstLast.cs" />
+    <Compile Include="PatientOnBoardShortDetail.cs" />
+    <Compile Include="PatientOnBoardStatus.cs" />
+    <Compile Include="PatientAccountStatus.cs" />
+    <Compile Include="PatientRecord.cs" />
+    <Compile Include="ConsultationResult.cs" />
+    <Compile Include="ConsultationStatusCode.cs" />
+    <Compile Include="NewPatientRequest.cs" />
+    <Compile Include="PatientShortDetail.cs" />
+    <Compile Include="Payments\PaymentProfilePostResult.cs" />
+    <Compile Include="Payments\CopayPaymentResponse.cs" />
+    <Compile Include="Payments\PaymentProfile.cs" />
+    <Compile Include="Payments\CimAddress.cs" />
+    <Compile Include="Payments\CimCustomer.cs" />
+    <Compile Include="DocumentsResponse.cs" />
+    <Compile Include="DocumentTypeCode.cs" />
+    <Compile Include="EncounterConcern.cs" />
+    <Compile Include="CustomCode.cs" />
+    <Compile Include="PendingStaffProfileRequest.cs" />
+    <Compile Include="PersonRecord.cs" />
+    <Compile Include="ResetPasswordRequest.cs" />
+    <Compile Include="ScheduleConsultationDetailByUsername.cs" />
+    <Compile Include="ScheduledConsultation.cs" />
+    <Compile Include="ScheduledConsultationResult.cs" />
+    <Compile Include="Scheduling\AppointmentApiRequest.cs" />
+    <Compile Include="Scheduling\AppointmentTypeCode.cs" />
+    <Compile Include="Scheduling\AttendenceCode.cs" />
+    <Compile Include="Scheduling\AvailabilityBlockClinicianRequest.cs" />
+    <Compile Include="Scheduling\AvailabilityBlockClinicianResponse.cs" />
+    <Compile Include="Scheduling\AvailabilityBlockRequest.cs" />
+    <Compile Include="Scheduling\AvailabilityBlockResponse.cs" />
+    <Compile Include="Scheduling\AvailabilityBlockRuleRequest.cs" />
+    <Compile Include="Scheduling\AvailabilityBlockRuleResponse.cs" />
+    <Compile Include="Scheduling\AvailabilityBlocksFilter.cs" />
+    <Compile Include="Scheduling\ParticipantTypeCode.cs" />
+    <Compile Include="Scheduling\RepeatPeriodCode.cs" />
+    <Compile Include="Sms\EncounterSms.cs" />
+    <Compile Include="FamilyMember.cs" />
+    <Compile Include="GetPatientsResponse.cs" />
+    <Compile Include="HospitalInfo.cs" />
+    <Compile Include="HospitalAddress.cs" />
+    <Compile Include="HospitalHours.cs" />
+    <Compile Include="IIntakeQuestionnaire.cs" />
+    <Compile Include="IMedicalHistoryProfile.cs" />
+    <Compile Include="IntakeQuestionnaire.cs" />
+    <Compile Include="IPatientMedicalHistoryProfile.cs" />
+    <Compile Include="MedicalHistoryProfile.cs" />
+    <Compile Include="NewbornRecord.cs" />
+    <Compile Include="PatientAccountInfo.cs" />
+    <Compile Include="PatientConsultationInfo.cs" />
+    <Compile Include="PatientMedicalHistoryProfile.cs" />
+    <Compile Include="PatientProfileResponse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResponseObservableItem.cs" />
+    <Compile Include="ScheduleSlot.cs" />
+    <Compile Include="SerializableToken.cs" />
+    <Compile Include="SerializableUser.cs" />
+    <Compile Include="Sms\SmsStatus.cs" />
+    <Compile Include="SoapNote.cs" />
+    <Compile Include="SsoSettings.cs" />
+    <Compile Include="StaffAccountModelRequest.cs" />
+    <Compile Include="StaffProfileDetailsRequest.cs" />
+    <Compile Include="StaffProfileRequest.cs" />
+    <Compile Include="SurgeryRecord.cs" />
+    <Compile Include="Telecom.cs" />
+    <Compile Include="UserActivationResponse.cs" />
+    <Compile Include="UserDetailsRequest.cs" />
+    <Compile Include="UserProfilesResult.cs" />
+    <Compile Include="UserRole.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="SnapMD.VirtualCare.ApiModels.ruleset" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Data\SnapMD.VirtualCare.ApiModels.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\..\..\src\packages\SonarAnalyzer.CSharp.1.13.0\analyzers\SonarAnalyzer.CSharp.dll" />
+    <Analyzer Include="..\..\..\src\packages\SonarAnalyzer.CSharp.1.13.0\analyzers\SonarAnalyzer.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\..\src\packages\Microsoft.Net.Compilers.1.3.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\src\packages\Microsoft.Net.Compilers.1.3.0\build\Microsoft.Net.Compilers.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
